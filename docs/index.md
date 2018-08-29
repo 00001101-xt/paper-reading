@@ -14,6 +14,6 @@
 - **Publication:** CVPR-2018
 - **Short summary:** Given an audio clip and two(or more) faces, deciding which face would produce the corresponding audio
 - **Date read:** 2018/07
-- [read more about this paper](./papers/Seeing-Voices-and-Hearing-Faces/index.md)
+- [read more about this paper](papers/Seeing-Voices-and-Hearing-Faces/index.md)
 
 ---

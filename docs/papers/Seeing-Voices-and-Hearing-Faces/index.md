@@ -30,14 +30,11 @@
 - Pre-process
 
     - audio: 
-    > 1. extract audio from video
-    
-    > 2. read as single channel, and then resample to 16K Hz
+        1. extract audio from video
+        2. read as single channel, and then resample to 16K Hz
+        3. Spectrum at size `512 x 300`(3 seconds audio, refer to [a large-scale speaker identification dataset] for details)
 
-    > 3. Spectrum at size `512 x 300`(3 seconds audio, refer to [a large-scale speaker identification dataset] for details)
-
-    - face image:
-    > crop and resize to `224 x 224` 
+    - face image: crop and resize to `224 x 224` 
 
 #### NN Architecture
 

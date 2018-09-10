@@ -27,6 +27,18 @@
 - Training data:
 > **VGGFace** and **VoxCeleb** dataset, VGGFace contains static face images while VoxCeleb contains audio-visual information, 1247 pairs are used(face in VGGFace and audio-face in VoxCeleb).
 
+- Pre-process
+
+    - audio: 
+    > 1. extract audio from video
+    
+    > 2. read as single channel, and then resample to 16K Hz
+
+    > 3. Spectrum at size `512 x 300`(3 seconds audio, refer to [a large-scale speaker identification dataset] for details)
+
+    - face image:
+    > crop and resize to `224 x 224` 
+
 #### NN Architecture
 
 |3-stream|5-stream|n-stream(dynamic)|
@@ -52,3 +64,5 @@ Then followed by `3072 --> 1024 --> 512 --> 2`, demostrated as:
 - Epochs: 10 or error stop decreasing
 
 ### Possible Applications
+
+> Additional auxiliary function for video analysis
